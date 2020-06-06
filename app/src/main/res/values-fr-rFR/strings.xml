@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AeroCalculator</string>
+    <string name="btnValidate">Calculer</string>
+    <string name="result_txt">TOD à %s Nm</string>
+    <string name="txt_base_factor_result">Le Facteur de Base est: %s</string>
+    <string name="tod_result">%1$d Nm à parcourir pendant %2$d minutes</string>
+    <string name="toast_error_input">Veuillez vérifier vos saisies</string>
+    <string name="app_description">Calculette rapide pour le vol</string>
+    <string name="title_top_of_descent">TOP OF DESCENT</string>
+    <string name="title_base_factor">FACTEUR DE BASE</string>
+    <string name="title_drift">DERIVE</string>
+    <string name="title_time_to_destination">TEMPS SANS VENT</string>
+    <string name="title_magnetic_declination">Déclinaison Magnétique</string>
+    <string name="title_fuel_conversion">Conversions Fuel</string>
+    <string name="input_hint_ground_speed">Vitesse Sol</string>
+    <string name="input_hint_altitude_start">Altitude (Départ)</string>
+    <string name="input_hint_altitude_finish">Altitude (Arrivée)</string>
+    <string name="input_hint_rate_of_descent">Taux de Descente</string>
+    <string name="input_hint_wind_degree">Vent °</string>
+    <string name="input_hint_wind_speed">Vent kts</string>
+    <string name="input_hint_magnetic_course">Route Magnétique</string>
+    <string name="input_hint_distance">Distance</string>
+</resources>

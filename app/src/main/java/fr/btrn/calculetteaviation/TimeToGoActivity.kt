@@ -28,7 +28,7 @@ class TimeToGoActivity : AppCompatActivity() {
             inputManager.hideSoftInputFromWindow(currentFocus?.applicationWindowToken, InputMethodManager.SHOW_FORCED)
 
             if (InputTrueSpeed.text.toString() == "" || input_distance.text.toString() == "") {
-                DynamicToast.makeError(applicationContext, "Veuillez vérifier vos saisies").show();
+                DynamicToast.makeError(applicationContext, applicationContext.getString(R.string.toast_error_input)).show();
             }else {
 
 

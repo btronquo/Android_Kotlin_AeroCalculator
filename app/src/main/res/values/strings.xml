@@ -1,26 +1,41 @@
 <resources>
-    <string name="app_name">Calculette Aviation</string>
-    <string name="txtDescriptionApp">Faites des calculs rapides pour l\'aviation!</string>
 
-    <string name="btnCalculTod">TOP OF DESCENT</string>
-    <string name="btnCalculBaseFactor">FACTEUR DE BASE</string>
-    <string name="btnCalculDerive">DERIVE</string>
-    <string name="btnTempsTrajet">TEMPS SANS VENT</string>
-    <string name="btnCalculDeclinaisonMag">Déclinaison Magnétique</string>
-    <string name="btnCalculFuel">Convertions Fuel</string>
+    <!-- APP CONFIGURATION -->
+    <string name="app_name">AeroCalculator</string>
+    <string name="app_description">Quick calculator for flying</string>
 
+    <!-- MENU AND TITLES -->
+    <string name="title_top_of_descent">TOP OF DESCENT</string>
+    <string name="title_base_factor">BASE FACTOR</string>
+    <string name="title_drift">DRIFT</string>
+    <string name="title_time_to_destination">TIME TO DESTINATION</string>
+    <string name="title_magnetic_declination">Magnetic Declination</string>
+    <string name="title_fuel_conversion">Fuel Conversions</string>
 
-    <!-- activityTod -->
-    <string name="txtRealSpeed">Vitesse propre</string>
-    <string name="txtActualAlt">Altitude actuelle</string>
-    <string name="txtActualAltArrival">Altitude d\'arrivée</string>
-    <string name="btnValidate">Calculer</string>
-    <string name="result_txt">Votre TOD est à %s Nm!</string>
+    <!-- SHARED INPUT -->
+    <string name="input_hint_ground_speed">Ground Speed</string>
+    <string name="btnValidate">Calculate</string>
 
+    <!-- TOP OF DESCENT -->
+    <string name="input_hint_altitude_start">Altitude (Start)</string>
+    <string name="input_hint_altitude_finish">Altitude (Finish)</string>
+    <string name="input_hint_rate_of_descent">Rate of Descent</string>
 
-    <!-- BaseFactor -->
-    <string name="input_speed_true">Vitesse Propre</string>
-    <string name="txt_base_factor_result">Le Facteur de Base est: %s</string>
+    <string name="result_txt">TOD at  %s Nm</string>
+    <string name="tod_result">%1$d Nm to go for %2$d minutes</string>
 
+    <!-- BASE FACTOR -->
+    <string name="txt_base_factor_result">Base Factor is %s</string>
+
+    <!-- DRIFT -->
+    <string name="input_hint_wind_degree">Wind °</string>
+    <string name="input_hint_wind_speed">Wind kts</string>
+    <string name="input_hint_magnetic_course">Magnetic Course</string>
+
+    <!-- TIME TO DESTINATION -->
+    <string name="input_hint_distance">Distance</string>
+
+    <!-- ERROR VALUES OR EMPTY INPUT -->
+    <string name="toast_error_input">Please verify your inputs</string>
 
 </resources>

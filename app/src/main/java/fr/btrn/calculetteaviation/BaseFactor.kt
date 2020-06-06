@@ -22,7 +22,7 @@ class BaseFactor : AppCompatActivity() {
             inputManager.hideSoftInputFromWindow(currentFocus?.applicationWindowToken, InputMethodManager.SHOW_FORCED)
 
             if (InputTrueSpeed.text.toString() == "" ) {
-                DynamicToast.makeError(applicationContext, "Veuillez vérifier vos saisies").show();
+                DynamicToast.makeError(applicationContext, applicationContext.getString(R.string.toast_error_input)).show();
             }else {
                 val baseFactor = kotlin.String.format("%.02f", (60 / InputTrueSpeed.text.toString().toFloat()))
                 str_result.text = "Facteur de base calculé: $baseFactor"
