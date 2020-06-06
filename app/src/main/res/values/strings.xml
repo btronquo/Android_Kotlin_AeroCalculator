@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Calculette Aviation</string>
+    <string name="txtDescriptionApp">Faites des calculs rapides pour l\'aviation!</string>
+
+    <string name="btnCalculTod">TOP OF DESCENT</string>
+    <string name="btnCalculBaseFactor">FACTEUR DE BASE</string>
+    <string name="btnCalculDerive">DERIVE</string>
+    <string name="btnTempsTrajet">TEMPS SANS VENT</string>
+    <string name="btnCalculDeclinaisonMag">Déclinaison Magnétique</string>
+    <string name="btnCalculFuel">Convertions Fuel</string>
+
+
+    <!-- activityTod -->
+    <string name="txtRealSpeed">Vitesse propre</string>
+    <string name="txtActualAlt">Altitude actuelle</string>
+    <string name="txtActualAltArrival">Altitude d\'arrivée</string>
+    <string name="btnValidate">Calculer</string>
+    <string name="result_txt">Votre TOD est à %s Nm!</string>
+
+
+    <!-- BaseFactor -->
+    <string name="input_speed_true">Vitesse Propre</string>
+    <string name="txt_base_factor_result">Le Facteur de Base est: %s</string>
+
+
+</resources>
