@@ -19,7 +19,8 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlCompat" />
 
     <TextView
         android:id="@+id/str_result"
@@ -58,7 +59,8 @@
         android:inputType="number"
         android:textColor="@color/txt_color_light"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        android:importantForAutofill="no" />
 
     <ImageButton
         android:id="@+id/btn_menu"
@@ -67,6 +69,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="8dp"
         android:background="#00FFFFFF"
+        android:contentDescription="@string/title_menu"
         android:onClick="onClickBtnMenu"
         android:scaleType="fitXY"
         app:layout_constraintStart_toStartOf="parent"

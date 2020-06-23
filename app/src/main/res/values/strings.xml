@@ -1,15 +1,17 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- APP CONFIGURATION -->
-    <string name="app_name">AeroCalculator</string>
+    <string name="app_name">AeroCalc</string>
     <string name="app_description">Quick calculator for flying</string>
+    <string name="copyright">v1.0a - Boris Tronquoy btrn.fr</string>
 
     <!-- MENU AND TITLES -->
+    <string name="title_menu">menu</string>
     <string name="title_top_of_descent">TOP OF DESCENT</string>
     <string name="title_base_factor">BASE FACTOR</string>
     <string name="title_drift">DRIFT</string>
-    <string name="title_time_to_destination">TIME TO DESTINATION</string>
-    <string name="title_magnetic_declination">Magnetic Declination</string>
+    <string name="title_time_to">TIME A to B</string>
+    <string name="title_magnetic_declination">MAGNETIC DECLINAISON</string>
     <string name="title_fuel_conversion">Fuel Conversions</string>
 
     <!-- SHARED INPUT -->
@@ -22,7 +24,7 @@
     <string name="input_hint_rate_of_descent">Rate of Descent</string>
 
     <string name="result_txt">TOD at  %s Nm</string>
-    <string name="tod_result">%1$d Nm to go for %2$d minutes</string>
+    <string name="tod_result" tools:ignore="PluralsCandidate">%1$d Nm to go for %2$d minutes</string>
 
     <!-- BASE FACTOR -->
     <string name="txt_base_factor_result">Base Factor is %s</string>
@@ -37,5 +39,19 @@
 
     <!-- ERROR VALUES OR EMPTY INPUT -->
     <string name="toast_error_input">Please verify your inputs</string>
+
+
+
+    <string name="admob_app_id" translatable="false">ca-app-pub-9643332010168294~2755223605</string>
+    <string name="description_menu">main menu</string>
+    <string name="tod_input_rate_descent" translatable="false">500</string>
+    <string name="txt_donate">Do you like my work? Pay me a coffee :)</string>
+    <string name="top_of_descent_button">top of descent button</string>
+    <string name="donate_button">donate_button</string>
+    <string name="title_time_to_destination">Time A to B</string>
+
+    <!-- BANNER ADMOB -->
+    <string name="admob_production" translatable="false">ca-app-pub-9643332010168294/7951709966</string>
+    <string name="admob_dev" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
 
 </resources>

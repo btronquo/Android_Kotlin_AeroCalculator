@@ -2,8 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="fr.btrn.calculetteaviation"
     android:minSdkVersion="23"
-    android:versionCode="1"
-    android:versionName="1.1b">
+    android:screenOrientation="portrait">
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,18 +12,23 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".TimeToGoActivity"></activity>
+        android:theme="@style/AppTheme"
+        android:fullBackupContent="@xml/backup_descriptor">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9643332010168294~2755223605"/>
+        <activity android:name=".TimeToGoActivity"/>
         <activity android:name=".DeriveActivity" />
         <activity android:name=".BaseFactor" />
         <activity android:name=".TodActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
+
 
 </manifest>

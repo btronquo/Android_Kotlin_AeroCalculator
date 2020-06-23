@@ -3,6 +3,7 @@ package fr.btrn.calculetteaviation
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import java.math.RoundingMode
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import com.pranavpandey.android.dynamic.toasts.DynamicToast
@@ -20,8 +21,8 @@ class TimeToGoActivity : AppCompatActivity() {
         setContentView(R.layout.activity_time_to_go)
 
 
-        btn_time_to_go.setOnClickListener {
 
+        btn_time_to_go.setOnClickListener {
 
             /* -- hide the keyboard -- */
             val inputManager: InputMethodManager =getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
@@ -31,13 +32,11 @@ class TimeToGoActivity : AppCompatActivity() {
                 DynamicToast.makeError(applicationContext, applicationContext.getString(R.string.toast_error_input)).show();
             }else {
 
-
-
                 // formule
                 // = distance(nm) * facteur_base
 
                 var result =
-                    input_distance.text.toString().toDouble() * (60/InputTrueSpeed.text.toString().toDouble())
+                    (input_distance.text.toString().toDouble() * (60/InputTrueSpeed.text.toString().toDouble())).formatDecimal(1)
 
 
                 str_result.text = "Temps sans vent: $result minutes"
@@ -54,3 +53,5 @@ class TimeToGoActivity : AppCompatActivity() {
         startActivity(intent)
     }
 }
+
+private fun Double.formatDecimal(numberOfDecimals: Int = 2): String = "%.${numberOfDecimals}f".format(this)

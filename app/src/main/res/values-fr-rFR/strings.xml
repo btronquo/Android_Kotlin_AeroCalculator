@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">AeroCalculator</string>
+    <string name="title_menu">menu</string>
+    <string name="copyright">v1.0a - Boris Tronquoy btrn.fr</string>
+    <string name="app_name">AeroCalc</string>
     <string name="btnValidate">Calculer</string>
     <string name="result_txt">TOD à %s Nm</string>
     <string name="txt_base_factor_result">Le Facteur de Base est: %s</string>
@@ -21,4 +23,9 @@
     <string name="input_hint_wind_speed">Vent kts</string>
     <string name="input_hint_magnetic_course">Route Magnétique</string>
     <string name="input_hint_distance">Distance</string>
+    <string name="description_menu">Menu Principal</string>
+    <string name="txt_donate">Vous aimez mon travail? Payez moi un café :)</string>
+    <string name="top_of_descent_button">top of descent button</string>
+    <string name="donate_button">donate_button</string>
+    <string name="title_time_to">Temps A à B</string>
 </resources>

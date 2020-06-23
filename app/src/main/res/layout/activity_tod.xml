@@ -12,9 +12,8 @@
         android:layout_height="59dp"
         android:background="#DCDCDD"
         android:fontFamily="sans-serif-black"
-        android:gravity="center_vertical"
-        android:text="TOP OF DESCENT"
-        android:textAlignment="center"
+        android:gravity="center|center_horizontal"
+        android:text="@string/title_top_of_descent"
         android:textColor="#1985A1"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -72,7 +71,8 @@
         android:inputType="number"
         android:textColor="@color/txt_color_light"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_distance" />
+        app:layout_constraintTop_toBottomOf="@+id/input_distance"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/txt_rate"
@@ -81,11 +81,13 @@
         android:layout_marginTop="4dp"
         android:ems="10"
         android:inputType="number"
-        android:text="500"
+        android:text="@string/tod_input_rate_descent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.251"
         app:layout_constraintStart_toEndOf="@+id/InputTrueSpeed"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        tools:ignore="LabelFor"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/textView7"
@@ -110,7 +112,8 @@
         android:inputType="number"
         android:textColor="@color/txt_color_light"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        android:importantForAutofill="no" />
 
     <ImageButton
         android:id="@+id/btn_menu"
@@ -123,6 +126,7 @@
         android:scaleType="fitXY"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/menu" />
+        app:srcCompat="@drawable/menu"
+        android:contentDescription="@string/description_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
