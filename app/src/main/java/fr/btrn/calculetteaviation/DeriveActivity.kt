@@ -1,22 +1,23 @@
 package fr.btrn.calculetteaviation
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import com.pranavpandey.android.dynamic.toasts.DynamicToast
 import kotlinx.android.synthetic.main.activity_derive.*
-import kotlinx.android.synthetic.main.activity_tod.InputTrueSpeed
-import kotlinx.android.synthetic.main.activity_tod.input_distance
-import kotlinx.android.synthetic.main.activity_tod.input_wind_force
-import kotlinx.android.synthetic.main.activity_tod.str_result
+import kotlinx.android.synthetic.main.activity_derive.InputTrueSpeed
+import kotlinx.android.synthetic.main.activity_derive.btn_time_to_go
+import kotlinx.android.synthetic.main.activity_derive.str_result
+import kotlinx.android.synthetic.main.activity_tod.*
 import java.lang.Math.toRadians
 import kotlin.math.roundToInt
 import kotlin.math.sin
 
 class DeriveActivity : AppCompatActivity() {
+    @SuppressLint("StringFormatMatches")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_derive)
@@ -28,7 +29,7 @@ class DeriveActivity : AppCompatActivity() {
             val inputManager: InputMethodManager =getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
             inputManager.hideSoftInputFromWindow(currentFocus?.applicationWindowToken, InputMethodManager.SHOW_FORCED)
 
-            if (InputTrueSpeed.text.toString() == "" || input_distance.text.toString() == "" || input_wind_force.text.toString() == "") {
+            if (InputTrueSpeed.text.toString() == "" || InputWindDegree.text.toString() == "" || InputWindForce.text.toString() == "") {
                 DynamicToast.makeError(applicationContext, applicationContext.getString(R.string.toast_error_input)).show();
             }else {
 
@@ -49,15 +50,13 @@ class DeriveActivity : AppCompatActivity() {
                 // donc ----> d =
 
 
-                var alpha =
-                    (input_distance.text.toString().toDouble() - Input_RouteMagnetique.text.toString().toDouble()) - 180
-                var x =
-                    input_wind_force.text.toString().toDouble() * (60/InputTrueSpeed.text.toString().toDouble())
-                var d =
-                    ((x * sin(toRadians(alpha))) * 100).roundToInt() /100.0
-
-                str_result.text = "Dérive: $d degrés"
-
+                val alpha =
+                    (InputWindDegree.text.toString().toDouble() - Input_RouteMagnetique.text.toString().toDouble()) - 180
+                val x =
+                    InputWindForce.text.toString().toDouble() * (60/InputTrueSpeed.text.toString().toDouble())
+                val derive =
+                    ((x * sin(toRadians(alpha))) * 100).roundToInt() / 100.0
+                str_result.text = getString(R.string.txt_res_drift, derive)
 
             }
 

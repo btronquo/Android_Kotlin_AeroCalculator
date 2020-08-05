@@ -28,4 +28,10 @@
     <string name="top_of_descent_button">top of descent button</string>
     <string name="donate_button">donate_button</string>
     <string name="title_time_to">Temps A à B</string>
+    <string name="title_slope">INCLINAISON PISTE</string>
+    <string name="input_hint_runway_height_max">Elevation Max Piste</string>
+    <string name="input_hint_runway_height_min">Elevation Min Piste</string>
+    <string name="input_hint_runway_lenght">Longeur de la piste</string>
+    <string name="txt_res_drift">Dérive: %s degrés</string>
+    <string name="txt_res_slope">Slope: %s</string>
 </resources>

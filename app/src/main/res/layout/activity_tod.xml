@@ -12,8 +12,9 @@
         android:layout_height="59dp"
         android:background="#DCDCDD"
         android:fontFamily="sans-serif-black"
-        android:gravity="center|center_horizontal"
+        android:gravity="center"
         android:text="@string/title_top_of_descent"
+        android:textAlignment="center"
         android:textColor="#1985A1"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,18 +22,75 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/input_distance"
+        android:id="@+id/InputTrueSpeed"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="56dp"
+        android:importantForAutofill="no"
+        android:ems="10"
+        android:hint="@string/input_hint_ground_speed"
+        android:inputType="number"
+        android:textColor="@color/txt_color_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:importantForAutofill="no"
+        android:text="@string/input_hint_rate_of_descent"
+        android:textColor="@color/txt_color_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.328"
+        app:layout_constraintStart_toEndOf="@+id/InputTrueSpeed"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/InputRateOfDescent"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:text="500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.251"
+        app:layout_constraintStart_toEndOf="@+id/InputTrueSpeed"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <EditText
+        android:id="@+id/InputCruiseAltitude"
         android:layout_width="140dp"
         android:layout_height="40dp"
         android:layout_marginStart="44dp"
         android:layout_marginTop="24dp"
-        android:autofillHints=""
         android:ems="10"
+        android:importantForAutofill="no"
         android:hint="@string/input_hint_altitude_start"
         android:inputType="number"
         android:textColor="@color/txt_color_light"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/InputTrueSpeed" />
+
+
+
+    <EditText
+        android:id="@+id/InputApproachFixAltitude"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/input_hint_altitude_finish"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColor="@color/txt_color_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/InputCruiseAltitude" />
 
     <TextView
         android:id="@+id/str_result"
@@ -55,65 +113,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="@string/btnValidate"
+        android:importantForAutofill="no"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.137"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_wind_force" />
+        app:layout_constraintTop_toBottomOf="@+id/InputApproachFixAltitude" />
 
-    <EditText
-        android:id="@+id/input_wind_force"
-        android:layout_width="140dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="24dp"
-        android:ems="10"
-        android:hint="@string/input_hint_altitude_finish"
-        android:inputType="number"
-        android:textColor="@color/txt_color_light"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_distance"
-        android:importantForAutofill="no" />
-
-    <EditText
-        android:id="@+id/txt_rate"
-        android:layout_width="60dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="4dp"
-        android:ems="10"
-        android:inputType="number"
-        android:text="@string/tod_input_rate_descent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.251"
-        app:layout_constraintStart_toEndOf="@+id/InputTrueSpeed"
-        app:layout_constraintTop_toBottomOf="@+id/textView7"
-        tools:ignore="LabelFor"
-        android:autofillHints="" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="@string/input_hint_rate_of_descent"
-        android:textColor="@color/txt_color_light"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.328"
-        app:layout_constraintStart_toEndOf="@+id/InputTrueSpeed"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-    <EditText
-        android:id="@+id/InputTrueSpeed"
-        android:layout_width="140dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="56dp"
-        android:ems="10"
-        android:hint="@string/input_hint_ground_speed"
-        android:inputType="number"
-        android:textColor="@color/txt_color_light"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        android:importantForAutofill="no" />
 
     <ImageButton
         android:id="@+id/btn_menu"
@@ -122,11 +127,11 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="8dp"
         android:background="#00FFFFFF"
+        android:contentDescription="@string/title_menu"
         android:onClick="onClickBtnMenu"
         android:scaleType="fitXY"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/menu"
-        android:contentDescription="@string/description_menu" />
+        app:srcCompat="@drawable/menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

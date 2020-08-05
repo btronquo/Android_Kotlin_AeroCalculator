@@ -12,15 +12,14 @@
         android:layout_height="59dp"
         android:background="#DCDCDD"
         android:fontFamily="sans-serif-black"
-        android:gravity="center_vertical"
+        android:gravity="center"
         android:text="@string/title_base_factor"
         android:textAlignment="center"
         android:textColor="#1985A1"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="RtlCompat" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/str_result"
@@ -56,11 +55,11 @@
         android:layout_marginTop="56dp"
         android:ems="10"
         android:hint="@string/input_hint_ground_speed"
+        android:importantForAutofill="no"
         android:inputType="number"
         android:textColor="@color/txt_color_light"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <ImageButton
         android:id="@+id/btn_menu"
@@ -69,7 +68,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="8dp"
         android:background="#00FFFFFF"
-        android:contentDescription="@string/title_menu"
+        android:contentDescription="@string/description_menu"
         android:onClick="onClickBtnMenu"
         android:scaleType="fitXY"
         app:layout_constraintStart_toStartOf="parent"

@@ -13,6 +13,7 @@
     <string name="title_time_to">TIME A to B</string>
     <string name="title_magnetic_declination">MAGNETIC DECLINAISON</string>
     <string name="title_fuel_conversion">Fuel Conversions</string>
+    <string name="title_slope">SLOPE</string>
 
     <!-- SHARED INPUT -->
     <string name="input_hint_ground_speed">Ground Speed</string>
@@ -33,14 +34,19 @@
     <string name="input_hint_wind_degree">Wind °</string>
     <string name="input_hint_wind_speed">Wind kts</string>
     <string name="input_hint_magnetic_course">Magnetic Course</string>
+    <string name="txt_res_drift">Drift: %s</string>
 
     <!-- TIME TO DESTINATION -->
     <string name="input_hint_distance">Distance</string>
 
+    <!-- SLOPE -->
+    <string name="input_hint_runway_height_max">Highest Runway Elevation</string>
+    <string name="input_hint_runway_height_min">Lowest Runway Elevation</string>
+    <string name="input_hint_runway_lenght">Runway Lenght</string>
+    <string name="txt_res_slope">Slope: %s</string>
+
     <!-- ERROR VALUES OR EMPTY INPUT -->
     <string name="toast_error_input">Please verify your inputs</string>
-
-
 
     <string name="admob_app_id" translatable="false">ca-app-pub-9643332010168294~2755223605</string>
     <string name="description_menu">main menu</string>

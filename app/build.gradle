@@ -11,8 +11,8 @@ android {
         applicationId "fr.btrn.calculetteaviation"
         minSdkVersion 26
         targetSdkVersion 29
-        versionCode 5
-        versionName "b1.1"
+        versionCode 6
+        versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

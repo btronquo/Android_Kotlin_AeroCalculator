@@ -49,6 +49,11 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
+    fun onClickBtnSlope(view:View) {
+        val intent = Intent(this, SlopeActivity::class.java)
+        startActivity(intent)
+    }
+
 
     /* donate btn */
     fun onClickBtnPayMeACoffee(view:View) {
